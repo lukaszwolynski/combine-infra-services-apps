@@ -9,11 +9,11 @@ spec:
   project: production
   source:
     path: devops-toolkit/app
-    repoURL: https://github.com/vfarcic/combine-infra-services-apps
+    repoURL: https://github.com/lukaszwolynski/combine-infra-services-apps
     targetRevision: HEAD
   destination:
     namespace: production
-    server: https://1.2.3.4
+    server: https://kubernetes.default.svc
   syncPolicy:
     automated:
       selfHeal: true
